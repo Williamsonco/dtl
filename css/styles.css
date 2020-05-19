@@ -12,6 +12,17 @@ p {
   color: #8f8f8f;
 }
 
+/* Title */
+
+.logo-icon {
+  font-size: 15rem;
+  color: #1979FF;
+}
+
+.logo{
+  text-align: right;
+
+}
 /* Headings */
 
 .big-heading {
@@ -35,8 +46,8 @@ p {
 
 /* Sections */
 
-.colored-section{
-  background-color:#ff4c68;
+.colored-section {
+  background-color:	#0c3a7c;
   color:#fff;
 }
 
@@ -68,21 +79,24 @@ p {
 /* Title Section */
 
 #title .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 3% 15%;
   text-align: left;
+
 }
 
 /* Download Buttons */
 
-.download-button {
-  margin: 5% 3% 5% 0;
+.sign-up-button {
+  margin-bottom: 5%;
 }
+
+
 
 /* Title Image */
 
 .title-image {
   width: 60%;
-  transform: rotate(25deg);
+
   position: absolute;
   right: 30%;
 }
@@ -102,24 +116,29 @@ p {
 }
 
 .icon {
-  color:#ef8172;
+  color:#1461CC;
   font-size: 3rem;
   padding: 2rem 0;
 }
 
 .icon:hover {
-  color:#fab0a5;
+  color:#1979FF;
 }
 
 /* Testimonial Section */
 
 #testimonials {
-  background-color: #ef8172;
+  background-color: #0c3a7c;
 }
 
 .testimonial-text{
   font-size: 3rem;
   line-height: 1.5;
+  color: #fff;
+}
+
+.testimonial-descriptor{
+  color: #fff;
 }
 
 .testimonial-image {
@@ -129,7 +148,7 @@ p {
 }
 
 #press {
-  background-color: #ef8172;
+  background-color: #fff;
   padding-bottom: 3%;
 }
 
@@ -138,26 +157,16 @@ p {
   margin: 20px 20px 50px;
 }
 
+/* Form */
 
-/* Pricing Section */
-
-#pricing {
-  padding: 100px;
+.form {
+  text-align: left;
+  font-family: "Montserrat"
 }
-
-.price-text{
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.pricing-column {
-  padding: 3% 2%;
-}
-
 @media (max-width:1042px) {
 
   .title-image {
-    transform: rotate(0deg);
+
     position: static;
   }
 
@@ -168,6 +177,9 @@ p {
 
 /* Call to Action Section */
 
+#cta .container-fluid {
+  padding-bottom: 3%;
+}
 
 /* Footer Section */
 
@@ -175,4 +187,8 @@ p {
 
 .footer-icons {
   padding: 20px;
+}
+
+#footer .container-fluid {
+  padding: 1%;
 }
