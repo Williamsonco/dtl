@@ -101,6 +101,29 @@ p {
   right: 30%;
 }
 
+.explainer {
+  padding-bottom: 0;
+}
+
+.members {
+  padding-top: 0;
+}
+.dtl-logo {
+  width: 120%;
+  height: auto;
+}
+
+.desc {
+  text-align: center;
+  padding-top: 10%;
+}
+
+/* About Section */
+
+.desc1 {
+  color: #172c4a;
+}
+
 /* Features Section */
 
 #features {
@@ -147,6 +170,29 @@ p {
   margin: 20px;
 }
 
+.list {
+  padding-top: 5%;
+}
+
+#testimonial-text {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+a {
+  color: white;
+}
+
+.charity-logo {
+  width: 50%;
+  padding-bottom: 5%;
+}
+
+.carousel-item {
+  padding-top: 5%;
+}
+/* Press Section */
+
 #press {
   background-color: #fff;
   padding-bottom: 3%;
@@ -159,7 +205,7 @@ p {
 
 /* Form */
 
-.form {
+.form-text {
   text-align: left;
   font-family: "Montserrat"
 }
@@ -173,6 +219,14 @@ p {
   #title {
     text-align: center;
   }
+}
+
+.form-header {
+  padding-top: 5%;
+}
+
+.form-body {
+  padding-top: 4%;
 }
 
 /* Call to Action Section */
