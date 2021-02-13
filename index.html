@@ -191,45 +191,88 @@
 
     <div class="container-fluid form-body">
 
-      <form class="form-text">
+      <form id='contact-form' class="form-text" novalidate>
         <div class="form-group">
-          <label for="inputAddress">Name</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Name">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Phone Number</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Number">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <label for="inputCity">Suburb</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <label for="inputCity">I have... to donate.</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
+          <label for="emailInput">I'd like to donate</label>
+          <select name="category" id="category" class="form-control" required>
+            <option value=""></option>
+            <option value="cash-donation">Monetary Donation</option>
+            <option value="food">Food</option>
+            <option value="clothes">Clothes</option>
+            <option value="toys">Toys</option>
+            <option value="pet-stuff">Pet stuff</option>
+            <option value="other">Other items</option>
+          </select>
         </div>
 
-        <button type="submit" class="btn btn-primary btn-dark">Submit</button>
+        <div class="form-group">
+          <label for="descriptionTextarea">Description of donation</label>
+          <small id="descriptionHelp" class="form-text text-muted">i.e. 3 bags of children’s clothes</small>
+          <textarea class="form-control" id="descriptionTextarea" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="quantityTextarea">Description of quantity</label>
+          <small id="quantityHelp" class="form-text text-muted">i.e. My donation fits in a basket / box / boot / bakkie</small>
+          <textarea class="form-control" id="quantityTextarea" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="donationPhoto">Photo upload</label>
+          <input id="donationPhoto" type="file" accept="image/*;capture=camera" required>
+        </div>
+
+        <!-- Name and last name - required field -->
+        <div class="form-group">
+          <label for="donorName">Name and lastname</label>
+          <input type="text" class="form-control" id="donorName" placeholder="John Doe" required>
+        </div>
+
+        <!-- Email - required field -->
+        <div class="form-group">
+          <label for="emailInput">Email address</label>
+          <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="i.e. johndoe@email.com" required>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <!-- Phone number - required field -->
+        <div class="form-group">
+          <label for="phonenumber">Phone Number</label>
+          <input type="tel" class="form-control" id="phonenumber" placeholder="Number" required>
+        </div>
+
+        <!-- Street address - required field -->
+        <div class="form-group">
+          <label for="inputAddress">Street Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="100 Awesome Street" required>
+        </div>
+
+        <!-- Building, Complex - required field -->
+        <div class="form-group">
+          <label for="inputAddress2">Building, complex, or floor</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="1 Business Time" required>
+        </div>
+       
+        <!-- Suburb - required field -->
+        <div class="form-group">
+          <label for="inputCity">Suburb</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="Sea Point" required>
+        </div>
+
+        <!-- Postal Code - required field -->
+        <div class="form-group">
+          <label for="inputPostalCode">Postal Code</label>
+          <input type="text" class="form-control" id="inputPostalCode" required placeholder="8001" required>
+        </div>
+
+        <!-- Checkbox - Terms and Conditions - required field -->
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+          <label class="form-check-label" for="exampleCheck1">I agree to the terms and conditions</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-
     </div>
 
   </section>
@@ -279,6 +322,7 @@
     </div>
   </footer>
 
+  <script type="text/javascript" src="js/form.js"></script>
 </body>
 
 </html>
